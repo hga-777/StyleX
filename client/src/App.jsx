@@ -4,10 +4,11 @@ import About from "./pages/About";
 import Signin from "./pages/Signin";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
-
+import Header from "./components/header";
 export default function App() {
   return (
     <BrowserRouter>      {/* //routes created using react-router-dom package */}
+    <Header />           {/* routes ke uper lgane se sbhi pages ke uper aa jaata h*/ }
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
